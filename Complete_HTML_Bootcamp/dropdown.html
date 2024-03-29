@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+    .menubar {
+        background-color:black;
+        border-radius: 15px;
+    }
+
+    .menubar ul {
+        display: inline-flex;
+        list-style: none;
+        overflow: auto;
+
+    }
+
+    .menubar ul li {
+        width: 120px;
+        float: left;
+        padding: 3px;
+
+    }
+
+    .menubar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menubar ul li:hover {
+        background-color: red;
+        border-radius: 5px;
+    }
+
+    .menubar .fa {
+        margin-right: 8px;
+    }
+
+    .sub-menu-1 {
+        display:none;
+    }
+
+    .menubar ul li:hover .sub-menu-1 {
+        display:block;
+        position:absolute;
+        background: red;
+        margin-top:5px;
+        margin-left: -15px;
+    }
+
+    .menubar ul li:hover .sub-menu-1 ul {
+        display:grid;
+        margin: 5px;
+        
+    }
+    .menubar ul li:hover .sub-menu-1 ul li{
+        width: 120px;
+        padding: 15px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        text-align:left;
+
+    }
+</style>
+
+<body>
+    <div class="menubar">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-clone"></i>Services</a></li>
+            <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>Phone</a></li>
+            <li><a href="#"><i class="fa fa-user-o"></i>About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission </a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

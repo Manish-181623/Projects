@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+            border: 5px solid red;
+            margin: 30px auto;
+            padding: 30px;
+            width: 600px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color:blue;
+            background-color: cornsilk;
+        }
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            background-color: blue;
+        }
+        .btn{
+            background-color: rgb(150, 33, 49);
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            border-radius: 3px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .btn:hover{
+            color: chartreuse;
+            background-color: chocolate;
+            border:2px solid rgb(35, 11, 58)
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is a Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, officiis consectetur. Aliquid impedit
+            doloribus nulla unde sapiente tenetur, amet quo expedita incidunt maxime cupiditate atque, fugit repellendus
+            minus dolorem. Quibusdam.</p>
+            <a href="https://google.com" target="_blank" class="btn">Readmore</a>
+            <button class="btn">Contact</button>
+    </div>
+</body>
+
+</html>

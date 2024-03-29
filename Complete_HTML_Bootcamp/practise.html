@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+</head>
+<style>
+    .menubar {
+        background-color: red;
+        border-radius: 10px;
+    }
+
+    .menubar ul {
+        display: inline-flex;
+        list-style: none;
+    }
+
+    .menubar ul li {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .menubar ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 8px;
+    }
+
+    .menubar ul li :hover {
+        background-color: rgb(101, 75, 219);
+        border-radius: 8px;
+    }
+
+    .subclass {
+        display: none;
+    }
+
+    .menubar ul li :hover .subclass {
+        display: block;
+        position: absolute;
+        background: blue;
+    }
+
+    .menubar ul li:hover .subclass ul {
+        display: grid;
+        margin: 5px;
+    }
+
+    .menubar ul li:hover .subclass ul li {
+        background: transparent;
+        width: 100px;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <div class="menubar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">More</a>
+                <div class="subclass">
+                    <ul>
+                        <li><a href="#">Department</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Offers</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
